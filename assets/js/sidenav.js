@@ -24,7 +24,7 @@ window.addEventListener("scroll", event => {
       link.classList.remove("current");
     }
   });
-  if(fromTop>450){
+  if(fromTop>350){
     wireimg.classList.add("fadeout");
   }
   else{
