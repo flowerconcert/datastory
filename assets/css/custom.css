@@ -2,6 +2,35 @@
 		transition-property: none;
 }
 
+#halfCover {
+	display:block;
+}
+
+#fullCover{
+	display: none;
+}
+
+@media screen and (max-width: 1152px) {
+	#wrapper > section > header {
+	    background-color: #fff;
+			background-image:none;
+	}
+
+	.cover-wire{
+		display:none;
+	}
+
+	#halfCover {
+		display:none;
+	}
+
+	#fullCover{
+		display: block;
+		height:100vh;
+	}
+
+}
+
 	.cover-wire{
 		position:fixed;
 		background-image: url('../../images/cover/petals_cover_wire.png');
