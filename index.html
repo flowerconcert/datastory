@@ -17,7 +17,7 @@
 					<section class="intro">
 						<header>
 							<h1>A concert of flowers</h1>
-							<p>a datastory about China, its music and our emotions</p>
+							<p>a datastory about Chinese culture, its music and our emotions</p>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
@@ -38,7 +38,7 @@
 							<li><a href="#hypothesis3">Hypothesis 3</a></li>
 							<li><a href="#hypothesis4">Hypothesis 4</a></li>
 							<li><a href="#hypothesis5">Hypothesis 5</a></li>
-							<li><a href="#hypothesis6">Hypothesis 6</a></li>
+							<li><a href="#hypothesis6">Hypothesis 6*</a></li>
 							<li><a href="#conclusions">Conclusions</a></li>
 						</ul>
 					</nav>
@@ -49,8 +49,9 @@
 							<h2>Introduction</h2>
 						</header>
 						<div class="content">
-							<p><strong>Around the topic of traditional Chinese music</strong>, our team has explored some ideas through research and brainstorming. Since then, we developed a particular interest in the ability of the music to evoke powerful emotional responses in listeners. We started our investigation with the aim of visualising the different aspects of the emotions in Chinese traditional music from many perspectives.
-You can find in this datastory the explanation of the six main hypotheses we’ve had during the exploratory phase of the design process, and our insights from the data visualization’s results.
+							<p><strong>How can we talk about traditional music?</strong> How can we communicate its power? From the beginning, these questions has been put at the start of our process, and generated a series of interesting directions. But there was one that we found particularly meaningful to our purpose: <i>the ability of the music to evoke powerful emotional responses in the listeners</i>.</p>
+							<p>We started our investigation with the aim of visualising the different aspects of the emotions in Chinese traditional music from many perspectives.
+In this datastory you will find the explanation of the six main hypotheses we've developed during the exploratory phase of the design process, and our insights from the data visualization’s results.
 </p>
 						</div>
 					</section>
@@ -61,14 +62,14 @@ You can find in this datastory the explanation of the six main hypotheses we’v
 							<h2>Datasets</h2>
 						</header>
 						<div class="content">
-							<p>On the basis of the <a href="https://www.researchgate.net/publication/324807629">research</a> carried out on the emotional model in music (Russell's 2-dimensional model), we understood that the parameters of <i>arousal</i> and <i>valence</i> are the starting point to calculate the emotional information of audio files.
-							This kind of calculation though required to build complex algorithms that would have been out of our reach in terms of knowledge and time. For this reason, we decided to use an AI-based tool called <a href="https://cyanite.ai/">Cyanite.ai</a> to retrieve emotional data from songs and instrument audio. The obtained emotion parameters are <i>arousal, valence, uplifting, tense, melancholic, relaxing, happy, dark, energetic, calm</i>. The data has then been saved as a JSON file.
-							 We also employed a <a href="https://uinstrument.net/home">Traditional Chinese Instruments dataset</a> with some additions to access data about materials and performance types.</p>
+							<p>On the basis of the <a href="https://www.researchgate.net/publication/324807629">research</a> carried out on the emotional model in music (Russell's <i>2-dimensional model</i>), we understood that the parameters of <i>arousal</i> and <i>valence</i> are the starting point to calculate the emotional information of audio files.
+							This kind of calculation though required to build complex algorithms that would have been out of our reach in terms of knowledge and time. For this reason, we decided to use an AI-based tool called <a href="https://cyanite.ai/">Cyanite.ai</a> to retrieve emotional data from songs and instrument audio samples. This service allowed us to put our hands on 10 fundamental emotional parameters: <i>arousal, valence, uplifting, tense, melancholic, relaxing, happy, dark, energetic, calm</i>.
+							 We also employed a <a href="https://uinstrument.net/home">Traditional Chinese Instruments dataset</a> with some manual additions to complete it data about materials and performance types.</p>
 							<div class="gallery">
-								<a href="images/gallery/fulls/01.png" class="portrait"><img src="images/gallery/fulls/01.png" alt="" /></a>
-								<a href="images/gallery/fulls/02.jpg" class="portrait"><img src="images/gallery/fulls/02.jpg" alt="" /></a>
-								<a href="images/gallery/fulls/03.png" class="landscape"><img src="images/gallery/fulls/03.png" alt="" /></a>
-								<a href="images/gallery/fulls/04.png" class="landscape"><img src="images/gallery/fulls/04.png" alt="" /></a>
+								<a href="images/gallery/fulls/01.png" class="portrait"><img src="images/gallery/fulls/01.png" alt="" /><h6>uinstrument.net dataset</h6></a>
+								<a href="images/gallery/fulls/02.jpg" class="portrait"><img src="images/gallery/fulls/02.jpg" alt="" /><h6>Sample of the retrieved JSON data from audio analysis with Cyanite.ai</h6></a>
+								<a href="images/gallery/fulls/03.png" class="landscape"><img src="images/gallery/fulls/03.png" alt="" /><h6>Instrument audio samples</h6></a>
+								<a href="images/gallery/fulls/04.png" class="landscape"><img src="images/gallery/fulls/04.png" alt="" /><h6>Analysis of Liangzhu (梁祝) through Cyanite.ai</h6></a>
 							</div>
 							<br/>
 							<p>We then started by getting the average values of each emotion for 24 traditional Chinese instruments. It can be noted the prevalence of some emotions compared to others.</p>
@@ -93,7 +94,7 @@ You can find in this datastory the explanation of the six main hypotheses we’v
 						</header>
 						<div class="content">
 							<p><strong>Will the materials affect the timbre?</strong>
-							We want to study whether the material of an instrument will affect the music it plays, and so, affect the emotion it expresses. First, we calculated the eight values of the emotions of each musical instrument. Then, we have associated each musical instrument with the types "string", “wood” and "bamboo".
+							Our first hypothesis. We wanted to study whether the material of an instrument will affect the music it plays, and so, affect the emotion it expresses. First, we calculated the eight values of the emotions of each musical instrument. Then, we have associated each musical instrument with the types "string", “wood” and "bamboo".
 
 							We selected one same emotion for each instrument and we used the tree graph to observe the proportion of all instruments based on its emotion value.
 							</p>
@@ -111,7 +112,7 @@ You can find in this datastory the explanation of the six main hypotheses we’v
 
 							<div class='tableauPlaceholder' id='viz1589928375032' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;AconcertofFlowers&#47;TreeMapRelaxed&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AconcertofFlowers&#47;TreeMapRelaxed' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;AconcertofFlowers&#47;TreeMapRelaxed&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589928375032');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 							<br/>
-							<p>In the process of comparing each emotional value, we found that not every type of instrument's material has a strong correlation with a specific emotion, and so we decided to focus on other hypotheses.</p>
+							<p>In the process of comparing each emotional value, we found that not many type of instrument's material has a strong correlation with a specific emotion, and so we decided to focus on other hypotheses.</p>
 							</div>
 							</section>
 
@@ -150,9 +151,9 @@ The second comparison is between the eight types of emotions under the same perf
 										<h3>Do Chinese symphonic music have similar emotional tendencies to the instruments used in their performance?</h3>
 									</header>
 									<div class="content">
-										<p><strong>Firstly, we obtained the MIDI file of Liangzhu</strong> which is one of the most popular Chinese Symphonic Music from <a href="https://www.midishow.com/">midishow.com</a>.</p>
+										<p><strong>Does the prevalent emotional value of an instrument</strong> influence the emotion of the whole performance? Firstly, we obtained the <a href="https://www.midishow.com/">MIDI file</a> of <i>Liangzhu</i>, one of the most popular symphonic music in Chinese tradition. This type of files contain all the instructions to reproduce the music with virtual instruments.</p>
 										<span class="image main"><img src="images/gallery/fulls/07.png" alt=""><h6>the MIDI file of Liangzhu opened in Garageband</h6></span>
-										<p>Secondly, we extracted data of tracks, velocity, and notes from this MIDI file. </p>
+										<p>Secondly, we extracted data of tracks, velocity, and notes from the MIDI file thanks to a <a href="https://www.fourmilab.ch/webtools/midicsv/">simple program</a> written in Perl. </p>
 										<span class="image main"><img src="images/gallery/fulls/08.png" alt=""><h6>Extracted data of Flauti (left) and Violin (right)</h6></span>
 										<p>Thirdly, we use Cynaite.ai to obtain the values of emotional parameters of Liangzhu and the instruments used in it.</p>
 										<span class="image main"><img src="images/gallery/fulls/09.png" alt=""><h6>The values of emotional parameters of Liangzhu</h6></span>
@@ -163,9 +164,8 @@ Another reason why we chose this song is the data diversity, which improves the 
 
 This song contains 21 instruments with different numbers of notes. Here is the ranking of instruments in this song based on the number of notes.
 </p>
-<span class="image main"><img src="images/gallery/fulls/11.png" alt=""><h6>The ranking of the instruments in Liangzhu based on the number of notes</h6></span>
-(yellow for Chinese instruments)</h6></span>
-<p><strong>The emotional tendencies of the instruments Used in Liangzhu.</strong> We started analyzing five instruments in Liangzhu: Flauti/Changdi, Arpa/Shuqin, Violin, Violoncello, and Oboe.
+<span class="image main"><img src="images/gallery/fulls/11.png" alt=""><h6>The ranking of the instruments in Liangzhu based on the number of notes (chinese instruments highlighted in yellow)</h6></span>
+<p><strong>For the emotional tendencies of the instruments used in Liangzhu</strong> we started analyzing five instruments in Liangzhu: Flauti/Changdi, Arpa/Shuqin, Violin, Violoncello, and Oboe.
 In the result:
 </p>
 <ul>
@@ -179,7 +179,7 @@ In the result:
 <p>Do Those Instruments Have Similar Emotional Tendencies to Liangzhu?
 
 Starting with Changdi, as we can see above, it always shows higher Energetic, higher Tense, lower Calm, and lower Melancholic.
-Knowing that <a href="https://electronicmusic.fandom.com/wiki/Velocity">the velocity variable</a> reflects the strength or pressure of instruments (Reference: ) we wanted to verify our hypothesis that when the Velocity of Changdi is increasing, Energetic and Tense of Liangzhu are increasing too, while Calm and Melancholic are decreasing.
+Knowing that the <a href="https://electronicmusic.fandom.com/wiki/Velocity">velocity variable</a> reflects the strength or pressure of instruments. We wanted to verify our hypothesis that when the Velocity of Changdi is increasing, Energetic and Tense of Liangzhu are increasing too, while Calm and Melancholic are decreasing.
 
 As the next step we create a new variable called <i>Correlation</i>.
 <br/>For example:
@@ -233,7 +233,7 @@ Due to the limited time for the project, we decided to explore the feasibility o
 										<h3>Chinese songs and music score</h3>
 									</header>
 									<div class="content">
-										<p><strong>Our next hypothesis</strong> would focus on showing the data related to one single traditional music piece, by extracting its emotional features. In particular, we wanted to impress the visualization of the emotions into a technical representation of music: the music score. We thought of two possible visualizations: one which would blend in with the musical notation, to serve as a functional communication for the musician of the emotional impact of what he’s currently playing; and another, with a more “artistic” approach, where the music score gets distorted by the emotional features, at the point of being unreadable.</p>
+										<p><strong>Our next hypothesis</strong> would focus on showing the data related to one single traditional music piece, by extracting its emotional features. In particular, we wanted to impress the visualization of the emotions into a technical representation of music: <i>the music score</i>. In this way, we wanted to embed and reflect the emotional value of music for the public directly in front of the performer's eyes, thus incorporating two sides of a songs into one. We thought of two possible visualizations: one which would blend in with the musical notation, to serve as a functional communication for the musician of the emotional impact of what he’s currently playing; and another, with a more “artistic” approach, where the music score gets distorted by the emotional features, at the point of being unreadable.</p>
 										<div class="gallery">
 											<a href="images/gallery/fulls/15.jpg" class="landscape"><img src="images/gallery/fulls/15.jpg" alt="" /><h6>Sketches of the ‘functional’ visualization of emotions in the music score</h6></a>
 											<a href="images/gallery/fulls/16.jpg" class="landscape"><img src="images/gallery/fulls/16.jpg" alt="" /><h6>A more ‘artistic’ approach in visualizing emotions on the music score</h6></a>
@@ -243,7 +243,7 @@ Due to the limited time for the project, we decided to explore the feasibility o
 										<span class="image main"><img src="images/gallery/fulls/17.png" alt=""><h6>Changdi instrument emotional values over time (song: Liangzhu)</h6></span>
 										<span class="image main"><img src="images/gallery/fulls/18.png" alt=""><h6>The MIDI file of Liangzhu converted into music score in MuseScore3</h6></span>
 
-										<p>In matching the emotion curves over time with the music sheet we soon encountered a problem of lack of data. The emotional values are sampled only at a fixed rate of 15 seconds, with the greater variations happening with an even lower frequency. This prevented a detailed representation for each line, or even for each page. Therefore, we ultimately decided to discard this hypothesis.</p>
+										<p>In matching the emotion curves over time with the music sheet we soon encountered a problem of lack of data. The emotional values are sampled only at a fixed rate of 15 seconds, with the greater 'interesting' variations happening with an even lower frequency. This prevented a detailed representation for each line, or even for each page. Therefore, we ultimately decided to discard this hypothesis.</p>
 
 										<div class='tableauPlaceholder' id='viz1589988414014' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;AconcertofFlowers&#47;Emotionevolutioninthefirst45secondsofLiangzhu&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='AconcertofFlowers&#47;Emotionevolutioninthefirst45secondsofLiangzhu' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ac&#47;AconcertofFlowers&#47;Emotionevolutioninthefirst45secondsofLiangzhu&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589988414014');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
@@ -262,12 +262,12 @@ Due to the limited time for the project, we decided to explore the feasibility o
 The first two sketches want, through the use of traditional Chinese symbols, to represent our main topic: traditional Chinese music.
 </p>
 <p>In the first sketch the peony, a very important flower for Chinese culture, represents a song. For example, for the song of Liangzhu, we have identified through an analysis of the data concerning the emotions that its main emotions are dark, melancholic and tense. These three main emotions are represented by different forms which then create the main flower. The size of each part is proportionate to the emotion itself within the song.
-This visualization can work both physically and digitally. <a href="http://dataphys.org/list/wearable-self/">Our inspiration</a></p>
+This visualization can work both physically and digitally (<a href="http://dataphys.org/list/wearable-self/">our inspiration</a>).</p>
 <div class="gallery">
 	<a href="images/gallery/fulls/20.jpg" class="landscape"><img src="images/gallery/fulls/20.jpg" alt="" /></a>
 </div>
 <br/>
-<p>The second sketch represents the traditional Chinese paper lantern. Each single song will be represented by a lantern, within an environment containing the most famous traditional Chinese songs. The Chinese lantern is, in this idea, transformed into its shape. it is divided into parts which, through their form, represent the emotion that is most present in the song. There can be two options for developing this idea: either by using the same shape as many times as necessary to have an exact proportion between the various shapes, or by changing their thickness, and therefore having a thicker emotion if more present and vice versa. The shapes sketched in the sketch can be better refined based on their connection with emotion. A site taken as a reference / inspiration for this idea was <a href="http://atlasofemotions.org/#actions/sadness">atlasofemotions.org</a>. The lanterns, although it would become more complicated, could be interactive and reproduce the song itself if you pull the thread underneath them.
+<p>The second sketch represents the traditional Chinese paper lantern. Each single song will be represented by a lantern, within an environment containing the most famous traditional Chinese songs. The Chinese lantern is, in this idea, transformed into its shape. it is divided into parts which, through their form, represent the emotion that is most present in the song. There can be two options for developing this idea: either by using the same shape as many times as necessary to have an exact proportion between the various shapes, or by changing their thickness, and therefore having a thicker emotion if more present and vice versa. The shapes sketched in the sketch can be better refined based on their connection with emotion. A site taken as a reference / inspiration for this idea was <a href="http://atlasofemotions.org/#actions/sadness">atlasofemotions.org</a>. Although increasing the complexity of the project, the lanterns could become interactive and reproduce the song they represent by pulling the thread underneath them.
 </p>
 <div class="gallery">
 	<a href="images/gallery/fulls/21.jpg" class="landscape"><img src="images/gallery/fulls/21.jpg" alt="" /></a>
@@ -280,11 +280,11 @@ This visualization can work both physically and digitally. <a href="http://datap
 <br/>
 <p>In the fourth sketch the representation becomes a network, where the song is at the center and will be connected with the respective emotions represented in the dimensions proportionate to their values. For this representation we hypothesized three different versions:
 <ul>
-	<li>digital display (the connection between the song and the emotion is displayed at the exact moment the song is played);
+	<li><i>digital display</i> (the connection between the song and the emotion is displayed at the exact moment the song is played);
 </li>
-	<li>physical visualization (the connection is static and proportionate to the values of the emotions present in the song, wires can be used as in <a href="http://dataphys.org/list/data-strings-physical-parallel-coordinates/">this example</a>;
+	<li><i>physical visualization</i> (the connection is static and proportionate to the values of the emotions present in the song, wires can be used as in <a href="http://dataphys.org/list/data-strings-physical-parallel-coordinates/">this example</a>;
 </li>
-	<li>digital, physical and interactive visualization (the songs can be viewed on a wall through projections and by touching the song concerned, you can listen to it and see at the same time the connections with each main emotion).
+	<li><i>digital, physical and interactive visualization</i> (the songs can be viewed on a wall through projections and by touching the song concerned, you can listen to it and see at the same time the connections with each main emotion).
 </li>
 </ul>
 </p>
@@ -299,15 +299,15 @@ This visualization can work both physically and digitally. <a href="http://datap
 					<!-- Section -->
 						<section id="hypothesis6">
 							<header>
-								<h2>Hypothesis 6</h2>
+								<h2>Hypothesis 6*</h2>
 								<h3>Harmonic differences in European and Chinese songs</h3>
 							</header>
 							<div class="content">
-								<p>The artistic concepts of China and Europe are totally different, and the ideas embodied in music and painting are also different. In Chinese ink painting, the painter will use the most strength and strokes to describe the main objects. In Chinese traditional folk music, there will be a leading instrument playing the main melody, while other instruments are used as the embellishment of the main melody. In the European orchestral ensemble, it emphasizes the unity and integrity of the movement and the harmony of the concerto. The main melody will be played by several major instruments together, just like in European oil painting, the complete picture will be depicted with the same strokes and colors, without a strong distinction between the primary and secondary picture levels.</p>
+								<p><i><strong>Disclaimer:</strong> this hypothesis hasn't been elaborated on the theme of emotions, therefore we decided to exclude it from the possible directions. Still, we decided to keep it in the datastory because it's a testimony of our work on the datasets and a starting point for possible future researches.</i></p><p>The artistic concepts of China and Europe are totally different, and the ideas embodied in music and painting are also different. In Chinese ink painting, the painter will use the most strength and strokes to describe the main objects. In Chinese traditional folk music, there will be a leading instrument playing the main melody, while other instruments are used as the embellishment of the main melody. In the European orchestral ensemble, it emphasizes the unity and integrity of the movement and the harmony of the concerto. The main melody will be played by several major instruments together, just like in European oil painting, the complete picture will be depicted with the same strokes and colors, without a strong distinction between the primary and secondary picture levels.</p>
 								<p>European music has attached great importance to harmony since the Baroque period. Instead, in traditional Chinese music, the melody is the protagonist. In order to make the melody more expressive, a large number of decorative sounds, such as tremolo, have been developed in the performance of Chinese folk music. These decorative sounds are not used so frequently in western music.</p>
 								The idea of comparing basic Chinese and European songs, as well as from research, even from previous hypotheses.
 								<p>The idea of comparing Chinese and European music was born from some aspects of the previous hypotheses.
-								We compared Baroque, Classical and Romantic European music with Chinese traditional music (after 1980, during its modern "golden age"). The selected songs are the foundation of contemporary music culture, and they are all orchestral music.</p>
+								We compared Baroque, Classical and Romantic European music for the "western" side, while for the Chinese traditional music we chose songs that have been written in the 1950s (during it's "golden age"). They are the most representative songs that everyone who studies Chinese traditional instruments need to learn. During this period, Chinese traditional music began to emerge, and the initial compilation of China's new ethnic orchestra was established. In both western and chinese, the selected songs are the foundation of contemporary music culture, and they are all orchestral music.</p>
 								<p>MIDI files for the European song selection has been taken from <a href="http://www.kunstderfuge.com/">kunstderfuge.com</a></p>
 								<ul>
 									<li>Beethoven, No.5 Symphony</li>
@@ -344,7 +344,7 @@ This visualization can work both physically and digitally. <a href="http://datap
 <div class='tableauPlaceholder' id='viz1589933054641' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;ChineseEuropean&#47;a&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='ChineseEuropean&#47;a' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;ChineseEuropean&#47;a&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1589933054641');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 
 							<br/>
-							<p>The hypothesis we wanted to verify with this song’s analysis was if there is a difference between the harmony of traditional Chinese songs and that of classical European songs. There are differences between the songs, but it is not possible to categorize them in the two different geographical areas, and it is for this reason that we decided to discard this hypothesis.</p>
+							<p>The hypothesis we wanted to verify with this song’s analysis was if there is a difference between the harmony of traditional Chinese songs and that of classical European songs. There are differences between the songs we selected, but we soon realized the mistake of dividing so neatly what we define as "western" and what we define as "Chinese" music, without a proper definition not solely based on geographical location. Moreover, we kept this hypothesis only as a further experimentation on the datasets, since it was not in line with our theme concerning emotions in music. For these reasons we decided to discard this hypothesis, although it could be certainly taken as a starting point for a new research on the theme of culture and music composition.</p>
 
 							</div>
 						</section>
@@ -355,9 +355,8 @@ This visualization can work both physically and digitally. <a href="http://datap
 								<h2>Conclusions</h2>
 							</header>
 							<div class="content">
-								<p>Hypothesis 3 is interesting to develop as a project, but it requires too much time for the analysis of more instruments, and so for the verification of the overall hypothesis.
-We believe that the most feasible and interesting one is hypothesis 5, in particular, we will focus our project on the basis of the first two sketches described: the peony and the paper lantern (or more in general, symbolic representations of traditional Chinese culture).
-</p>
+								<p>Considering the problems encountered with <a href="#hypothesis4">hypothesis 4</a>, and the lack of a strong evidence for <a href="#hypothesis1">hypothesis 1</a> and <a href="#hypothesis2">hypothesis 2</a>, we decided not to bring them on for further work in the design phase. For <a href="#hypothesis3">hypothesis 3</a>, although it could have been easily brought on a project, it would have required too much time for the analysis of more instruments, and so for the verification of the overall hypothesis. Also, we thought that the communicational value and power of showing the instrument-song correlation in terms of emotion would not have been so strong as the other directions.
+								We believe that the most feasible and interesting one is <a href="#hypothesis5">hypothesis 5</a>, since it clearly shows the connection <i>music-tradition-emotions</i> that we were seeking for. In particular, we will focus our project on the basis of the first two sketches described: the peony and the paper lantern (two fundamental symbolic representations of traditional Chinese culture).</p>
 							</div>
 						</section>
 
