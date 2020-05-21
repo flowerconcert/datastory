@@ -2,6 +2,10 @@
 		transition-property: none;
 }
 
+#wrapper > section.intro > header > * {
+    width: 22rem;
+}
+
 #halfCover {
 	display:block;
 }
